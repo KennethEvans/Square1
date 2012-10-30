@@ -26,21 +26,21 @@ public class FilterOptionsDialog extends JDialog
   private Square1 mainFrame;
   private boolean isModified = false;
   private static final long serialVersionUID = 1L;
-  private JPanel jContentPane = null;
-  private JPanel mainPanel = null;
-  private JCheckBox useFiltersCheckBox = null;
-  private JCheckBox useFilter1CheckBox = null;
-  private JCheckBox useFilter2CheckBox = null;
-  private JPanel useFilterNPanel = null;
-  private JCheckBox useFilterCustomCheckBox = null;
-  private JTextField customTextField = null;
-  private JCheckBox useFilterNCheckBox = null;
-  private JTextField filterNTextField = null;
-  private JPanel customPanel = null;
-  private JPanel buttonPanel = null;
-  private JButton okButton = null;
-  private JButton cancelButton = null;
-  private JButton applyButton = null;
+  private JPanel jContentPane;
+  private JPanel mainPanel;
+  private JCheckBox useFiltersCheckBox;
+  private JCheckBox useFilter1CheckBox;
+  private JCheckBox useFilter2CheckBox;
+  private JPanel useFilterNPanel;
+  private JCheckBox useFilterCustomCheckBox;
+  private JTextField customTextField;
+  private JCheckBox useFilterNCheckBox;
+  private JTextField filterNTextField;
+  private JPanel customPanel;
+  private JPanel buttonPanel;
+  private JButton okButton;
+  private JButton cancelButton;
+  private JButton applyButton;
 
   /**
    * Constructor
@@ -96,7 +96,7 @@ public class FilterOptionsDialog extends JDialog
    */
   private void initialize() {
     isModified = false;
-    this.setName("filterOptionsdDialog");
+    this.setName("filterOptionsDialog");
     this.setModal(false);
     this.setTitle("Filter Options");
     this.setContentPane(getJContentPane());
@@ -104,7 +104,7 @@ public class FilterOptionsDialog extends JDialog
   }
 
   /**
-   * This method returns the jContentPane, creating it the first time.
+   * This method returns the JContentPane, creating it the first time.
    * 
    * @return javax.swing.JPanel
    */
