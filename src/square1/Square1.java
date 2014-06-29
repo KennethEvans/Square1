@@ -740,8 +740,8 @@ public class Square1 extends JFrame implements Constants
       Pattern pattern = Pattern.compile("[@TBR][-0-9 ]");
       // Process the file
       String fileName = chooser.getSelectedFile().getPath();
-      JList transformList = savedTransformsDialog.getTransformList();
-      DefaultListModel listModel = savedTransformsDialog.getListModel();
+      JList<String> transformList = savedTransformsDialog.getTransformList();
+      DefaultListModel<String> listModel = savedTransformsDialog.getListModel();
       int last = listModel.size();
       long lineNum = 0;
       try {
@@ -797,7 +797,7 @@ public class Square1 extends JFrame implements Constants
           JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE);
         if(selection != JOptionPane.OK_OPTION) return;
       }
-      DefaultListModel listModel = savedTransformsDialog.getListModel();
+      DefaultListModel<String> listModel = savedTransformsDialog.getListModel();
       int last = listModel.size();
       long lineNum = 0;
       try {

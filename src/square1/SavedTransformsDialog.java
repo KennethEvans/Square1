@@ -32,8 +32,8 @@ public class SavedTransformsDialog extends JDialog
    */
   private static final long serialVersionUID = 1L;
   private Square1 mainFrame;
-  private DefaultListModel listModel = new DefaultListModel();
-  private JList transformList = new JList(listModel);
+  private DefaultListModel<String> listModel = new DefaultListModel<String>();
+  private JList<String> transformList = new JList<String>(listModel);
   private JScrollPane transformListScrollPane = new JScrollPane(transformList);
 
   /**
@@ -500,14 +500,14 @@ public class SavedTransformsDialog extends JDialog
   /**
    * @return Returns the transformList.
    */
-  public JList getTransformList() {
+  public JList<String> getTransformList() {
     return transformList;
   }
 
   /**
    * @return Returns the listModel.
    */
-  public DefaultListModel getListModel() {
+  public DefaultListModel<String> getListModel() {
     return listModel;
   }
 
