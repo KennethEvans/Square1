@@ -63,7 +63,7 @@ public class FilterOptionsDialog extends JDialog
     useFilterCustomCheckBox.setSelected(mainFrame.isUseFilterCustom());
     useFilterNCheckBox.setSelected(mainFrame.isUseFilterN());
     customTextField.setText(mainFrame.getCustomFilter());
-    filterNTextField.setText(new Integer(mainFrame.getNFilter()).toString());
+    filterNTextField.setText(Integer.valueOf(mainFrame.getNFilter()).toString());
     isModified = false;
   }
   
